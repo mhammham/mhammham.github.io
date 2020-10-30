@@ -3,7 +3,7 @@
   "width": 800,
   "height": 500,
   "title": "Earthquakes 2",
-  "projection": {"type": "mercator"},
+  "projection": {"type": "equalEarth"},
   "layer": [
     {
       "data": {
