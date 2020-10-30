@@ -18,7 +18,7 @@
 </div>
 <div id="symbol_map" style="width:50%; margin: 0 auto;"></div>
 <br>
-<div id="symbol_map2" style="width:50%; margin: 0 auto;"></div>
+<div id="choropleth_map" style="width:50%; margin: 0 auto;"></div>
 
 <script type="text/javascript">
 
@@ -28,10 +28,18 @@
   }).catch(console.error);
 </script>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 
   var spec2 = "js/symbol_map.json";
   vegaEmbed('#symbol_map2', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script> -->
+
+<script type="text/javascript">
+
+  var spec2 = "js/symbol_map.json";
+  vegaEmbed('#choropleth_map', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
