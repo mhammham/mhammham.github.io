@@ -38,6 +38,9 @@
       {"field": "properties.NAME", "type": "nominal", "title": "country"},
       {"field": "value", "type": "quantitative"}
     ]
-  }
+  },
+  "config": {
+    "fill": "steelblue",
+  },
 
 }
