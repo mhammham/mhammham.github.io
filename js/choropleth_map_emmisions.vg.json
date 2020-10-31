@@ -17,10 +17,10 @@
           "url": "https://raw.githubusercontent.com/mhammham/mhammham.github.io/master/data/co2_emission_2010.csv"
         },
         "key": "Entity",
-        "fields": ["Annual CO₂ emissions (tonnes )"]
+        "fields": ["Annual"]
       }
     },
-    {"calculate": "datum.Annual CO₂ emissions (tonnes ) + 0.1", "as": "Emmisions"}
+    {"calculate": "datum.Annual + 0.1", "as": "Emmisions"}
   ],
   "projection": {
     "type": "equirectangular"
@@ -36,7 +36,7 @@
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "Annual CO₂ emissions (tonnes )", "type": "quantitative"}
+      {"field": "Annual", "type": "quantitative"}
     ]
   }
 
