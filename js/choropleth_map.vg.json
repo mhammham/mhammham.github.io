@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "COVID-19 Active Cases (10 Oct 2020)",
+  "title": "Annual CO2 Emmisions (2010, Tonnes)",
   "width": 800,
   "height": 600,
   "data": {
@@ -14,13 +14,13 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/data/covid_10_10_2020.csv"
+          "url": "https://raw.githubusercontent.com/mhammham/mhammham.github.io/master/data/co2_emission_2010_2.xlsb.csv"
         },
-        "key": "Country",
-        "fields": ["Active"]
+        "key": "Entity",
+        "fields": ["Annual CO₂ emissions (tonnes )"]
       }
     },
-    {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
+    {"calculate": "datum.Annual CO₂ emissions (tonnes ) + 0.1", "as": "Emmisions"}
   ],
   "projection": {
     "type": "equirectangular"
@@ -30,13 +30,13 @@
     },
   "encoding": {
     "color": {
-      "field": "Active Cases",
+      "field": "Emmisions",
       "type": "quantitative",
       "scale": {"type": "log"}
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "Active", "type": "quantitative"}
+      {"field": "Annual CO₂ emissions (tonnes )", "type": "quantitative"}
     ]
   }
 
