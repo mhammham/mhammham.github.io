@@ -41,7 +41,7 @@
   },
   "config":{
     "mark":{
-      "fill": "steelblue",
+      "fill": "steelblue"
     },
   },
 }
