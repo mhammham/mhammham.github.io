@@ -21,6 +21,11 @@
 <div id="choropleth_map" style="width:50%; margin: 0 auto;"></div>
 <br>
 <div id="choropleth_map2" style="width:50%; margin: 0 auto;"></div>
+<br>
+<div id="choropleth_map"></div>
+
+
+
 
 <script type="text/javascript">
 
@@ -50,6 +55,14 @@
 
   var spec2 = "js/covid_19.vg.json";
   vegaEmbed('#choropleth_map2', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+<script type="text/javascript">
+
+  var spec2 = "js/choropleth_map.vg.json";
+  vegaEmbed('#choropleth_map', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
