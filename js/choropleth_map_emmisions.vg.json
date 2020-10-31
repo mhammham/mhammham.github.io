@@ -39,7 +39,7 @@
       {"field": "value", "type": "quantitative"}
     ]
   },
-  "config": {
+  "config":{
     "mark":{
       "fill": "steelblue",
     },
