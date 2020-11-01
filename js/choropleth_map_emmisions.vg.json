@@ -27,7 +27,7 @@
   },
   "mark": {
     "type": "geoshape"
-  },
+    },
   "encoding": {
     "color": {
       "field": "Emmisions",
