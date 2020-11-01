@@ -16,12 +16,12 @@
         }
   },
   "transform": [{
-      "lookup": "properties.NAME",
+      "lookup": "properties.ABBREV",
       "from": {
         "data": {
           "url": "https://raw.githubusercontent.com/mhammham/mhammham.github.io/master/data/co2_emission_2010.csv"
         },
-        "key": "Entity",
+        "key": "Code",
         "fields": ["Annual"]
       }
     },
@@ -40,7 +40,7 @@
       "scale": {"type": "log"}
     },
     "tooltip": [
-      {"field": "properties.NAME", "type": "nominal", "title": "Entity"},
+      {"field": "properties.ABBREV", "type": "nominal", "title": "Code"},
       {"field": "Annual", "type": "quantitative"}
     ]
   }
