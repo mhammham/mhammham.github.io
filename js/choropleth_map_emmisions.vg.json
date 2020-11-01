@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Annual CO2 Emmisions (2014, Tonnes)",
+  "title": "Annual CO2 Emmisions (2010, Tonnes)",
   "width": 800,
   "height": 600,
   "config":{
@@ -19,13 +19,13 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/mhammham/mhammham.github.io/master/data/data2_co2_emission_2014.csv"
+          "url": "https://raw.githubusercontent.com/mhammham/mhammham.github.io/master/data/co2_emission_2010.csv"
         },
-        "key": "country",
-        "fields": ["value"]
+        "key": "Entity",
+        "fields": ["Annual"]
       }
     },
-    {"calculate": "datum.value + 0.1", "as": "Emmisions"}
+    {"calculate": "datum.Annual + 0.1", "as": "Emmisions"}
   ],
   "projection": {
     "type": "equirectangular"
@@ -40,8 +40,8 @@
       "scale": {"type": "log"}
     },
     "tooltip": [
-      {"field": "properties.NAME", "type": "nominal", "title": "country"},
-      {"field": "value", "type": "quantitative"}
+      {"field": "properties.NAME", "type": "nominal", "title": "Entity"},
+      {"field": "Annual", "type": "quantitative"}
     ]
   }
 }
