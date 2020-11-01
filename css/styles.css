@@ -11,9 +11,3 @@
 	/*height: 1000px;
 	width: 800px;*/
 }
-
-#table, #th, #td {
-	margin: 0 auto;
-  border: 1px solid black;
-	text-align: center;
-}
