@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Annual CO2 Emmisions (2010, Tonnes)",
+  "title": "Annual CO2 Emmisions (2014, Tonnes)",
   "width": 800,
   "height": 600,
   "data": {
