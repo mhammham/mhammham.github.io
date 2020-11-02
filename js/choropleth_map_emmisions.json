@@ -35,7 +35,6 @@
         "fields": ["Annual"]
       }
     },
-    {"filter": {"field": "Year", "equal": "Year_At"}},
     {"calculate": "datum.Annual + 1", "as": "Emmisions"}
   ],
 
