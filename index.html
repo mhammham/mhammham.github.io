@@ -42,6 +42,12 @@ table, th, td {
       <div id="bar_graph"></div>
     </td>
   </tr>
+  <tr>
+    <td>
+      <div id="donut_graph"></div>
+    </td>
+    <td></td>
+  </tr>
 </table>
 
 <!-- NOTE: Miscelaneous -->
@@ -107,6 +113,14 @@ table, th, td {
 
   var spec2 = "js/bar_graph.json";
   vegaEmbed('#bar_graph', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+<script type="text/javascript">
+
+  var spec2 = "js/donut_graph.json";
+  vegaEmbed('#donut_graph', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
