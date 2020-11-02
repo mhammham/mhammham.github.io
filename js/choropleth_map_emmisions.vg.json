@@ -20,7 +20,7 @@
         "fields": ["Annual"]
       }
     },
-    {"calculate": "datum.Annual", "as": "Emmisions"}
+    {"calculate": "datum.Annual + 0.1", "as": "Emmisions"}
   ],
   "projection": {
     "type": "equirectangular"
