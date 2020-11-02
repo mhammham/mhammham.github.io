@@ -4,13 +4,13 @@
   "width": 500,
   "data": {"url": "data/co2_emission.csv"},
   "mark": {"type": "arc", "innerRadius": 50},
-  "transform":[{
-    "sort": [{ "field": "Annual", "order": "descending" }],
-    "filter": "datum.rank <= 10"
-  }],
   "encoding": {
     "theta": {"field": "Annual","aggregate": "sum", "type": "quantitative"},
     "color": {"field": "Entity", "type": "nominal"}
   },
+  "transform":[{
+    "sort": [{ "field": "Annual", "order": "descending" }],
+    "filter": "datum.rank <= 10"
+  }],
   "view": {"stroke": null}
 }
