@@ -32,7 +32,8 @@
     "color": {
       "field": "Emmisions",
       "type": "quantitative",
-      "scale": {"type": "log"}
+      "scale": {"type": "log"},
+      "scale": {"scheme": "Oranges"}
     },
     "tooltip": [
       {"field": "properties.ADM0_A3", "type": "nominal", "title": "Code"},
