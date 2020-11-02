@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Total CO2 emissions per year (tonnes)",
   "height": 500,
   "width": 500,
   "data": {"url": "data/co2_emission.csv"},
