@@ -5,7 +5,7 @@
   "data": {"url": "data/co2_year_total.csv"},
   "mark": "bar",
   "encoding": {
-    "x": {"timeUnit": "year", "field": "Time"},
+    "x": {"timeUnit": "year", "field": "time"},
     "y": {"aggregate": "sum", "field": "emmisions"}
   }
 }
