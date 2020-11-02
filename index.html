@@ -45,7 +45,9 @@ table, th, td {
   <tr>
     <td></td>
     <td></td>
-    <td></td>
+    <td>
+      <div id="scatter_plot"></div>
+    </td>
   </tr>
 </table>
 
@@ -96,6 +98,14 @@ table, th, td {
 
   var spec2 = "js/choropleth_map_emmisions.vg.json";
   vegaEmbed('#choropleth_map4', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+<script type="text/javascript">
+
+  var spec2 = "js/scatter_plot_interactive.vg.json";
+  vegaEmbed('#scatter_plot', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
