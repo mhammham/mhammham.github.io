@@ -7,6 +7,6 @@
   "mark": "bar",
   "encoding": {
     "x": {"field": "Year"},
-    "y": {"field": "Annual"}
+    "y": {"aggregate": "sum", "field": "Annual"}
   }
 }
