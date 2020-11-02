@@ -16,7 +16,7 @@
         "as": "rank"
       }],
       "sort": [{ "field": "Annual", "order": "descending" }]
-    }
+    },
     {"filter": "datum.rank <= 5"}
   ],
 
