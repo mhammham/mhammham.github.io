@@ -44,7 +44,9 @@ table, th, td {
   </tr>
   <tr>
     <td></td>
-    <td></td>
+    <td>
+      <div id="bar_graph"></div>
+    </td>
     <td>
       <div id="scatter_plot"></div>
     </td>
@@ -106,6 +108,14 @@ table, th, td {
 
   var spec2 = "js/scatter_plot_interactive.vg.json";
   vegaEmbed('#scatter_plot', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+<script type="text/javascript">
+
+  var spec2 = "js/bar_graph.json";
+  vegaEmbed('#bar_graph', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
