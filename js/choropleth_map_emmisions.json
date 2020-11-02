@@ -25,7 +25,6 @@
   }],
 
   "transform": [
-    {"filter": {"field": "Year", "equal": "Year_At"}},
     {
       "lookup": "properties.ADM0_A3",
       "from": {
@@ -36,6 +35,7 @@
         "fields": ["Annual"]
       }
     },
+    {"filter": {"field": "Year", "equal": "Year_At"}},
     {"calculate": "datum.Annual + 1", "as": "Emmisions"}
   ],
 
