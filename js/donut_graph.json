@@ -3,7 +3,10 @@
   "title": "5 largest contributers to CO2 release",
   "height": 500,
   "width": 500,
-  "data": {"url": "data/co2_emission.csv"},
+  "data": [
+    {"url": "https://github.com/mhammham/mhammham.github.io/blob/master/data/co2_emission.csv"},
+    {"transform": }
+  ],
 
   "mark": {"type": "arc", "innerRadius": 50},
 
