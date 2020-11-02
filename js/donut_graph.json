@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "5 largest contributers to CO2 release",
   "height": 500,
   "width": 500,
   "data": {"url": "data/co2_emission.csv"},
@@ -18,8 +19,8 @@
   "mark": {"type": "arc", "innerRadius": 50},
 
   "encoding": {
-    "theta": {"field": "Annual","aggregate": "sum", "type": "quantitative"},
-    "color": {"field": "Entity", "type": "nominal", "sort": { "field": "Annual", "op": "average", "order": "descending" }}
+    "theta": {"field": "Annual","aggregate": "sum", "type": "quantitative", "sort": { "field": "Annual", "op": "average", "order": "descending" }},
+    "color": {"field": "Entity", "type": "nominal"}
   },
 
 
