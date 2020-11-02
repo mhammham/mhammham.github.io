@@ -8,6 +8,5 @@
   "encoding": {
     "x": {"timeUnit": "year","field": "Year"},
     "y": {"aggregate": "sum", "field": "Annual"},
-    "scale": {"scheme": "Oranges"}
   }
 }

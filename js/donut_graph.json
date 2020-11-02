@@ -9,7 +9,8 @@
 
   "encoding": {
     "theta": {"field": "Annual","aggregate": "sum", "type": "quantitative"},
-    "color": {"field": "Entity", "type": "nominal"}
+    "color": {"field": "Entity", "type": "nominal"},
+    "sort": "descending"
   },
 
 
