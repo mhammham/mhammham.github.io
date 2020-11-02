@@ -23,7 +23,10 @@
         "name": "Data for year: "
     }
   }],
-  "transform": [{
+
+  "transform": [
+    {"filter": "datum.Year == Year_At"},
+    {
       "lookup": "properties.ADM0_A3",
       "from": {
         "data": {
@@ -35,12 +38,15 @@
     },
     {"calculate": "datum.Annual + 1", "as": "Emmisions"}
   ],
+
   "projection": {
     "type": "equirectangular"
   },
+
   "mark": {
     "type": "geoshape"
     },
+
   "encoding": {
     "color": {
       "field": "Emmisions",
@@ -48,6 +54,7 @@
       "scale": {"type": "log"},
       "scale": {"scheme": "Oranges"}
     },
+
     "tooltip": [
       {"field": "properties.ADM0_A3", "type": "nominal", "title": "Code"},
       {"field": "Annual", "type": "quantitative"}
