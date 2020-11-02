@@ -7,7 +7,8 @@
   "mark": {"type": "arc", "innerRadius": 50},
   "encoding": {
     "theta": {"field": "Annual","aggregate": "sum", "type": "quantitative"},
-    "color": {"field": "Entity", "type": "nominal"}
+    "color": {"field": "Entity", "type": "nominal"},
+    "sort": true
   },
   "view": {"stroke": null}
 }
