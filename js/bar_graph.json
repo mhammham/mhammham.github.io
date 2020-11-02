@@ -6,6 +6,6 @@
   "mark": "bar",
   "encoding": {
     "x": {"timeUnit": "year", "field": "Time"},
-    "y": {"aggregate": "Total", "field": "emmisions"}
+    "y": {"aggregate": "sum", "field": "emmisions"}
   }
 }
