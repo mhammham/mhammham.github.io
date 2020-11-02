@@ -8,9 +8,5 @@
     "theta": {"field": "Annual","aggregate": "sum", "type": "quantitative"},
     "color": {"field": "Entity", "type": "nominal"}
   },
-  "transform":[{
-    "sort": [{ "field": "Annual", "order": "descending" }],
-    "filter": "datum.rank <= 10"
-  }],
   "view": {"stroke": null}
 }
