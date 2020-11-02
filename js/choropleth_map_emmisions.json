@@ -3,6 +3,15 @@
   "title": "Annual CO2 Emmisions (2010, Tonnes)",
   "width": 800,
   "height": 600,
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+    "format": {
+          "type": "topojson",
+          "feature": "ne_110m_admin_0_countries"
+        }
+  },
+
   "params": [{
       "name": "Year_At",
       "value": 1970,
@@ -12,15 +21,8 @@
         "max": 2017,
         "step": 1,
         "name": "Data for year: "
-      }
-    }],
-  "data": {
-    "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
-    "format": {
-          "type": "topojson",
-          "feature": "ne_110m_admin_0_countries"
-        }
-  },
+    }
+  }],
   "transform": [{
       "lookup": "properties.ADM0_A3",
       "from": {
