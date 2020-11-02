@@ -3,11 +3,28 @@
   "height": 500,
   "width": 500,
   "data": {"url": "data/co2_emission.csv"},
+
+  "transform":[
+    {
+      "window": [{
+        "op": "rank",
+        "as": "rank"
+      }],
+      "sort": [{ "field": "Annual", "order": "descending" }]
+    },
+    {"filter": "datum.rank <= 5"}
+  ],
+
   "mark": {"type": "arc", "innerRadius": 50},
+
   "encoding": {
     "theta": {"field": "Annual","aggregate": "sum", "type": "quantitative"},
-    "color": {"field": "Entity", "type": "nominal"}
+    "color": {"field": "Entity", "type": "nominal", "sort": { "field": "Annual", "op": "average", "order": "descending" }}
   },
+
+
+
+
 
   "view": {"stroke": null}
 }
