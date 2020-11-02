@@ -13,7 +13,7 @@
       }],
       "sort": [{ "field": "Annual", "order": "descending" }]
     },
-    {"filter": "datum.rank <= 5"}
+    {"filter": "datum.rank <= 10"}
   ],
 
   "mark": {"type": "arc", "innerRadius": 50},
