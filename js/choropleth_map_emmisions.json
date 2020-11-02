@@ -25,7 +25,7 @@
   }],
 
   "transform": [
-    {"filter": "datum.Year == Year_At"},
+    {"filter": {"field": "Year", "equal": "Year_At"}},
     {
       "lookup": "properties.ADM0_A3",
       "from": {
