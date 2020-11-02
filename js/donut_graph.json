@@ -7,7 +7,16 @@
   "mark": {"type": "arc", "innerRadius": 50},
   "encoding": {
     "theta": {"field": "Annual","aggregate": "sum", "type": "quantitative"},
-    "color": {"field": "Entity", "type": "nominal"}
+    "color": {"field": "Entity", "type": "nominal"},
+    "order": {"field": "Annual", "sort": "descending"}
   },
+  "layer": [{
+    "mark": {"type": "arc", "outerRadius": 150, "stroke": "#fff"}},
+    {
+    "mark": {"type": "text", "radius": 175, "fill": "#202630"},
+    "encoding": {
+      "text": {"field": "Entity", "type": "quantitative"}
+    }
+    }],
   "view": {"stroke": null}
 }
