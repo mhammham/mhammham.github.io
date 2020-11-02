@@ -9,16 +9,5 @@
     "color": {"field": "Entity", "type": "nominal"}
   },
 
-  "transform":[
-    {
-      "window": [{
-        "op": "rank",
-        "as": "rank"
-      }],
-      "sort": [{ "field": "Annual", "order": "descending" }]
-    },
-    {"filter": "datum.rank <= 5"}
-  ],
-
   "view": {"stroke": null}
 }
