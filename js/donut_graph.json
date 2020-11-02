@@ -19,7 +19,7 @@
   "mark": {"type": "arc", "innerRadius": 50},
 
   "encoding": {
-    "theta": {"field": "Annual","aggregate": "sum", "type": "quantitative", "sort": { "field": "Annual", "op": "average", "order": "descending" }},
+    "theta": {"field": "Annual","aggregate": "sum", "type": "quantitative", "sort": { "field": "Annual", "op": "sum", "order": "descending" }},
     "color": {"field": "Entity", "type": "nominal"}
   },
 
