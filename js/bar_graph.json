@@ -2,10 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "height": 500,
   "width": 500,
-  "data": {"url": "data/co2_year_total.csv"},
+  "data": {"url": "data/co2_emission.csv"},
   "mark": "bar",
   "encoding": {
-    "x": {"field": "year"},
-    "y": {"field": "total"}
+    "x": {"timeUnit": "year","field": "Year"},
+    "y": {"aggregate": "sum","field": "Annual"}
   }
 }
