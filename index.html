@@ -38,7 +38,7 @@ table, th, td {
   <tr>
     <td> </td>
     <td>
-      <div id="choropleth_map3"></div>
+      <div id="choropleth_map"></div>
     </td>
     <td> </td>
   </tr>
@@ -54,12 +54,12 @@ table, th, td {
 </table>
 
 <!-- NOTE: Miscelaneous -->
-<div id="symbol_map" style="width:50%; margin: 0 auto;"></div>
+<!-- <div id="symbol_map" style="width:50%; margin: 0 auto;"></div>
 <br>
 <div id="choropleth_map2" style="width:50%; margin: 0 auto;"></div>
 <br>
 
-<div id="choropleth_map4" style="width:50%; margin: 0 auto;"></div>
+<div id="choropleth_map4" style="width:50%; margin: 0 auto;"></div> -->
 
 <!-- NOTE: Ending area -->
 
@@ -80,23 +80,23 @@ table, th, td {
   }).catch(console.error);
 </script> -->
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 
   var spec2 = "js/covid_19.vg.json";
   vegaEmbed('#choropleth_map2', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-</script>
+</script> -->
 
 <script type="text/javascript">
 
   var spec2 = "js/choropleth_map.vg.json";
-  vegaEmbed('#choropleth_map3', spec2).then(function(result) {
+  vegaEmbed('#choropleth_map', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 
   var spec2 = "js/choropleth_map_emmisions.vg.json";
   vegaEmbed('#choropleth_map4', spec2).then(function(result) {
@@ -118,7 +118,7 @@ table, th, td {
   vegaEmbed('#bar_graph', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-</script>
+</script> -->
 
 
 </body>
