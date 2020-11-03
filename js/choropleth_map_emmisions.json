@@ -12,18 +12,6 @@
         }
   },
 
-  "params": [{
-      "name": "Year_At",
-      "value": 1970,
-      "bind": {
-        "input": "range",
-        "min": 1970,
-        "max": 2017,
-        "step": 1,
-        "name": "Data for year: "
-    }
-  }],
-
   "transform": [
     {
       "lookup": "properties.ADM0_A3",
@@ -37,16 +25,6 @@
     },
     {"calculate": "datum.Annual + 1", "as": "Emmisions"}
   ],
-
-  "selection": {
-    "SelectYear": {
-      "type": "single",
-      "fields": ["Year"],
-      "bind": {
-        "Year": {"input": "range", "min": 1970,"max": 2017,"step": 1}
-      }
-    }
-  },
 
   "projection": {
     "type": "equirectangular"
