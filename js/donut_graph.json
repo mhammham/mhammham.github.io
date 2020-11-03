@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "10 Largest CO2 contributors in 2010",
   "height": 500,
   "width": 500,
   "data": {"url": "https://raw.githubusercontent.com/mhammham/mhammham.github.io/master/data/co2_emission_2010.csv"},
@@ -11,7 +12,7 @@
         "as": "rank"
       }],
       "sort": [{ "field": "Annual", "order": "descending" }]
-    },
+    }, 
     {
       "filter": "datum.rank <= 10"
     }
