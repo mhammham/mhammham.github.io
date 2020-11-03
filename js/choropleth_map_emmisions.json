@@ -61,11 +61,7 @@
       "field": "Emmisions",
       "type": "quantitative",
       "scale": {"type": "log"},
-      "scale": {"scheme": "Oranges"},
-      "condition": {
-        "selection": "SelectYear",
-        "field": "Annual", "type": "nominal"
-      },
+      "scale": {"scheme": "Oranges"}
     },
 
     "tooltip": [
