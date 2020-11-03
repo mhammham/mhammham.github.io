@@ -3,7 +3,7 @@
   "title": "Total CO2 emissions per year (tonnes)",
   "height": 500,
   "width": 500,
-  "data": {"url": "data/co2_emission.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/mhammham/mhammham.github.io/master/data/co2_emission.csv"},
   "mark": "bar",
   "encoding": {
     "x": {"timeUnit": "year","field": "Year"},
