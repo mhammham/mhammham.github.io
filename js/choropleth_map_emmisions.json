@@ -38,6 +38,16 @@
     {"calculate": "datum.Annual + 1", "as": "Emmisions"}
   ],
 
+  "selection": {
+    "SelectYear": {
+      "type": "single",
+      "fields": ["Year"],
+      "bind": {
+        "Year": {"input": "range", "min": 1970,"max": 2017,"step": 1}
+      }
+    }
+  },
+
   "projection": {
     "type": "equirectangular"
   },
@@ -51,7 +61,11 @@
       "field": "Emmisions",
       "type": "quantitative",
       "scale": {"type": "log"},
-      "scale": {"scheme": "Oranges"}
+      "scale": {"scheme": "Oranges"},
+      "condition": {
+        "selection": "SelectYear",
+        "field": "Annual", "type": "nominal"
+      },
     },
 
     "tooltip": [
